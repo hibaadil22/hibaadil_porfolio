@@ -1,0 +1,164 @@
+/* Styles de base */
+p {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+}
+
+#hero {
+   margin-top:  300px;
+}
+.img-container {
+    width: 20%; /* Largeur de l'image (80% de l'écran) */
+    margin-bottom: 10px; /* Espacement en bas de l'image */
+    margin-left: 500px;
+}
+.cnt2{
+    margin-right: 700px;
+}
+
+.immg {
+    width: 40%; /* L'im1ge prendra 100% de la largeur de son conteneur */
+    height: auto; /* Maintient le ratio de l'image */
+    margin-left: 700px;
+}
+.info-container {
+    width: 60%; /* Largeur des informations (80% de l'écran) */
+  
+    margin-right: 10000px;
+   
+}
+h3 {
+    color: #fff;
+}
+
+.immg {
+    border: solid rgb(219, 16, 152) 7px;
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Ajout des transitions */
+}
+
+.info-container {
+    
+    text-align: left; /* Aligne le texte à gauche */
+    padding: 20px; /* Ajoute de l'espace autour du contenu */
+    border: 1px solid rgb(219, 16, 152); /* Bordure pour définir la section */
+    border-radius: 10px; /* Coins arrondis */
+    background-color: 555; /* Fond blanc semi-transparent */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour donner de la profondeur */
+   /* Espace à gauche pour le séparer de l'image */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Ajout des transitions */
+}
+
+/* Effets au survol */
+img:hover {
+    transform: scale(1.05); /* Agrandit légèrement l'image */
+    box-shadow: 0 4px 20px rgb(219, 16, 152); /* Ombre plus marquée au survol */
+}
+
+.info-container:hover {
+    transform: translateY(-5px); /* Légère élévation de la carte */
+    box-shadow: 0 40px 30px  rgb(219, 16, 152); /* Ombre plus marquée au survol */
+}
+
+.btn {
+    margin-top: 10px; /* Espace au-dessus des boutons */
+    margin-right: 10px; /* Espace à droite des boutons */
+    padding: 10px 20px; /* Ajoute du padding pour rendre le bouton plus cliquable */
+    font-size: 1rem; /* Taille de police des boutons */
+    border: none; /* Supprime la bordure par défaut */
+    border-radius: 5px; /* Coins arrondis des boutons */
+    cursor: pointer; /* Change le curseur au survol */
+    transition: background-color 0.3s; /* Animation au survol */
+}
+
+.btn:hover {
+    background-color: darkmagenta; /* Change la couleur de fond au survol */
+    color: white; /* Change la couleur du texte au survol */
+}
+
+.button-container {
+    display: flex; /* Utilise Flexbox pour centrer les boutons */
+    justify-content: center; /* Centre les boutons horizontalement */
+    margin-top: 20px; /* Ajoute de l'espace au-dessus des boutons */
+}
+.about {
+
+    background-color: plum;
+    display: flex; /* Utiliser Flexbox pour l'alignement */
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: center; /* Centre le contenu verticalement */
+    padding: 50px; /* Espacement */
+}
+
+.info-container {
+    opacity: 0; /* Rendre invisible par défaut */
+    transform: translateY(20px); /* Déplacer légèrement vers le bas */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transition pour l'opacité et la translation */
+}
+
+.img-container {
+    opacity: 0; /* Rendre invisible par défaut */
+    transform: translateY(-20px); /* Déplacer légèrement vers le haut */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transition pour l'opacité et la translation */
+}
+
+/* Classe pour activer l'animation */
+.animate {
+    opacity: 1; /* Rendre visible */
+    transform: translateY(0); /* Remettre à la position initiale */
+}
+
+button {
+    margin-top: 20px; /* Ajoute un espace au-dessus des boutons */
+    padding: 10px 20px; /* Ajoute du padding pour rendre le bouton plus cliquable */
+    border: none; /* Supprime la bordure par défaut */
+    border-radius: 5px; /* Arrondit les coins des boutons */
+    cursor: pointer; /* Change le curseur au survol */
+    color: white; /* Couleur du texte */
+   
+}
+
+/* Media Query pour appareils mobiles */
+@media (max-width: 768px) {
+    #hero {
+        display: flex;
+        flex-direction: column; /* Empile les éléments verticalement */
+        align-items: center; /* Centre les éléments horizontalement */
+        padding: 20px; /* Ajuste le padding pour un meilleur espacement */
+       
+    }
+
+    .info-container {
+        width: 100%; /* Largeur des informations (90% de l'écran) pour plus d'espace */
+        margin-bottom: 20px; /* Ajoute un espacement en bas de l'info container */
+        text-align: center; /* Centre le texte à l'intérieur de l'info container */
+        margin-left: 350px;
+        
+    }
+
+    .img-container {
+        width: 100%; /* Largeur de l'image (70% de l'écran) */
+        margin-bottom: 20px; /* Espacement en bas de l'image */
+        display: flex; /* Utilisation de flex pour centrer l'image */
+        justify-content: center; /* Centre l'image horizontalement */
+        margin-right: 1000px;
+        
+
+    }
+
+    .immg {
+        width: 100%; /* L'image prendra 100% de la largeur de son conteneur */
+        height: auto; /* Maintient le ratio de l'image */
+        margin-right: 200px;
+    }
+
+    p {
+        font-size: 10px; /* Ajuste la taille de la police pour le texte */
+    }
+
+    .button-container {
+        margin: 0 auto; /* Centre le conteneur des boutons */
+    }
+}

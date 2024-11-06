@@ -1,0 +1,76 @@
+.services {
+    padding: 50px 20px;
+}
+
+.services-title {
+    text-align: center; /* Centre le titre */
+    margin-bottom: 30px; /* Espace en bas du titre */
+    font-size: 2rem; /* Taille du titre */
+    color: rgb(219, 16, 152);
+}
+h3{
+    color: linear-gradient(120deg, #cc1bae, #0eabc7);
+    text-align: center;
+}
+
+.services-container {
+    display: flex; /* Utilisation de flexbox pour aligner les cartes */
+    justify-content: center; /* Centre les cartes horizontalement */
+    gap: 20px; /* Espace entre les cartes */
+    flex-wrap: wrap; /* Permet aux cartes de passer à la ligne si l'espace est insuffisant */
+}
+
+.service-card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px; /* Largeur des cartes */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Ombre pour donner de la profondeur */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition pour le mouvement et l'ombre */
+    text-align: center; /* Centre le contenu de chaque carte */
+    margin: 50px;
+    
+}
+
+.service-card:hover {
+    transform: translateY(-10px) scale(1.05); /* Effet de flottement */
+    box-shadow: 0px 20px 20px 20px rgb(219, 16, 152); /* Ombre externe au survol */
+    
+}
+
+.service-card h3 {
+    margin: 10px 0; /* Espacement autour du titre de la carte */
+    font-size: 1.5rem; /* Taille du titre de la carte */
+}
+
+.service-card p {
+    color: #555; /* Couleur du texte du paragraphe */
+}
+/* Styles par défaut pour les services */
+.services-container {
+    display: flex; /* Utilise flexbox pour afficher les cartes */
+    flex-wrap: wrap; /* Permet le passage à la ligne des cartes */
+    justify-content: center; /* Centre les cartes horizontalement */
+}
+
+.service-card {
+    flex: 1 0 30%; /* Flex-grow, flex-shrink et flex-basis pour les grandes tailles d'écran */
+    margin: 15px; /* Espacement autour des cartes */
+    padding: 20px; /* Espacement interne des cartes */
+    border: 1px solid #ddd; /* Bordure autour de chaque carte */
+    border-radius: 8px; /* Coins arrondis */
+    text-align: center; /* Centre le texte dans les cartes */
+}
+
+/* Media Query pour les écrans de moins de 768px */
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column; /* Empile les cartes verticalement */
+        align-items: center; /* Centre les cartes horizontalement */
+    }
+
+    .service-card {
+        flex: 1 0 100%; /* Chaque carte prend 100% de la largeur */
+        margin: 10px 0; /* Espacement vertical entre les cartes */
+    }
+}

@@ -1,0 +1,108 @@
+
+.v {
+    margin-top: 140px;
+    margin-left: 20px;
+    
+    background-size: cover; /* Pour couvrir l'ensemble de la section */
+    background-position: center; /* Centrer l'image */
+    height: 500px; /* Ajustez la hauteur selon vos besoins */
+}
+
+a{color:#fff;
+
+}
+
+span{
+    color:rgb(219, 16, 152);
+    font-weight: bold;
+}
+
+.btninfo{
+    margin-left:10px;
+}
+
+img{
+    animation: updown 3s linear infinite;
+    border: solid rgb(219, 16, 152) ;
+    border-radius: 100px;
+}
+@keyframes updown {
+
+    0%{
+        transform: translateY(-20px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(-20px);
+    }
+    
+}
+
+
+/*  */
+
+/* Media query pour les téléphones (écrans de 768px de largeur ou moins) */
+/* Media query pour les téléphones (écrans de 768px de largeur ou moins) */
+/* Media query pour les téléphones (écrans de 768px de largeur ou moins) */
+/* Media query pour les téléphones (écrans de 768px de largeur ou moins) */
+/* Media query pour les téléphones (écrans de 768px de largeur ou moins) */
+@media (max-width: 768px) {
+    .v {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .row {
+        flex-direction: column; /* Empile les éléments verticalement */
+    }
+
+    .col-8, .col-4 {
+        width: 100%;
+        padding: 0;
+    }
+
+    /* Placer les éléments dans l'ordre souhaité */
+    .col-8 p {
+        order: 1; /* Paragraphe en premier */
+        margin-bottom: 10px;
+        text-align: center; /* Centre le paragraphe */
+    }
+    
+    .col-8 h1 {
+        order: 2; /* Titre après le paragraphe */
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        text-align: center; /* Centre le titre */
+    }
+
+    .col-4 {
+        order: 3; /* Image après le titre */
+        display: flex;
+        justify-content: center;
+        margin: 15px 0;
+    }
+
+    .col-8 .btn {
+        order: 4; /* Boutons en dernier */
+        margin: 5px 0;
+        padding: 5px 10px; /* Réduit le padding des boutons */
+        font-size: 0.8rem; /* Réduit la taille de la police des boutons */
+        width: auto; /* Ajuste la largeur du bouton */
+        display: block; /* Permet d'utiliser le centering */
+        margin-left: auto; /* Centre horizontalement */
+        margin-right: auto; /* Centre horizontalement */
+    }
+    
+    img {
+        width: 150px; /* Ajuste la taille de l'image pour téléphone */
+    }
+
+    .v {
+        margin-top: 50px;
+    }
+
+    
+  
+}

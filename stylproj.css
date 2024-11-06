@@ -1,0 +1,44 @@
+.transition-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition pour le mouvement et l'ombre */
+    cursor: pointer; /* Indique que c'est interactif */
+    background-color: rgba(255, 255, 255, 0.7); /* Fond blanc transparent */
+    border: none; /* Supprime la bordure par défaut */
+    border-radius: 8px; /* Arrondi des coins de la carte */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre externe par défaut */
+}
+
+.transition-card:hover {
+    transform: translateY(-10px) scale(1.05); /* Effet de flottement */
+    box-shadow: 0px 20px 20px 20px rgb(219, 16, 152); /* Ombre externe au survol */
+}
+
+.card-img-top {
+    border-radius: 15px; /* Appliquer un rayon de bordure personnalisé */
+    object-fit: cover; /* Pour que l'image remplisse bien le conteneur */
+    height: 200px; /* Hauteur de l'image, ajustez selon vos besoins */
+}
+
+h3{
+    color:rgb(219, 16, 152) ;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* Media Query pour les écrans de moins de 768px */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Empile les cartes verticalement */
+        align-items: center; /* Centre les cartes horizontalement */
+    }
+
+    .col-md-4 {
+        flex: 1 0 100%; /* Chaque carte prend 100% de la largeur */
+        margin-bottom: 15px; /* Espacement vertical entre les cartes */
+    }
+
+    /* Optionnel : ajuster l'image pour les mobiles */
+    .card-img-top {
+        width: 100%; /* L'image prendra 100% de la largeur de son conteneur */
+        height: auto; /* Maintient le ratio de l'image */
+    }
+}

@@ -1,0 +1,137 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-weight: 400;
+    overflow-x: hidden;
+    position: relative;
+background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5e6d0fc0-372d-4cac-b408-d3302075a276/dd4dcvb-01d03523-60d4-400d-b965-107b7d4c8ba8.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzVlNmQwZmMwLTM3MmQtNGNhYy1iNDA4LWQzMzAyMDc1YTI3NlwvZGQ0ZGN2Yi0wMWQwMzUyMy02MGQ0LTQwMGQtYjk2NS0xMDdiN2Q0YzhiYTgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.KD9adk7TKiUZszNLVmAr2C0eVQdgS5nsro9Gp7ztgX8'); /* Remplacez par l'URL directe de l'image */ 
+    color: #fff;
+    font-family: 'Centra',sans-serif !important;
+}
+
+.btn {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(120deg, #cc1bae, #0eabc7);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: background-position 0.4s ease;
+    background-size: 200%;
+  }
+
+  /* Effet de fond qui se déplace au clic */
+  .btn:active {
+    background-position: right center;
+  }
+
+  /* Style de l'en-tête */
+.head {
+    padding: 10px 0;
+  /* Ajuste la couleur de fond si nécessaire */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Style de la liste de navigation */
+.nav {
+    display: flex;
+    gap: 20px;
+  
+}
+
+/* Styles des icônes sociales */
+.social-icons .icon {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: transform 0.2s ease, color 0.3s ease, background-color 0.3s ease;
+}
+
+.social-icons .icon:hover {
+    color: #feb47b;
+    background: linear-gradient(120deg, #cc1bae, #0eabc7);
+}
+
+.social-icons .icon:active {
+    transform: scale(1.2);
+}
+
+.facebook { color: #3b5998; }
+.email { color: #d44638; }
+.instagram { color: #e4405f; }
+
+
+/* Style de base pour la navigation */
+.container.head {
+    padding: 10px;
+}
+
+.nav-link {
+    padding: 5px 10px;
+    color: white;
+}
+
+/* Media query pour les téléphones (largeur de 768px ou moins) */
+@media (max-width: 768px) {
+    /* Style de base pour la navigation */
+.container.head {
+    padding: 10px;
+}
+
+.nav {
+    display: flex;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Masquer le menu sur les petits écrans */
+@media (max-width: 768px) {
+    .nav {
+        display: none; /* Masquer par défaut */
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding: 10px;
+        background: linear-gradient(120deg, #cc1bae, #0eabc7); /* Couleur de fond du menu */
+        position: absolute;
+        top: 50px;
+        left: 0;
+    }
+
+    /* Afficher le menu lorsque la classe "show-nav" est présente */
+    .nav.show-nav {
+        display: flex;
+    }
+
+    /* Cacher les icônes et bouton de recherche pour mobile */
+    .social-search {
+        display: none;
+    }
+}
+
+}
+
+

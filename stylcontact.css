@@ -1,0 +1,142 @@
+
+.contact-section {
+    
+    /* Chemin vers votre image de fond */
+    background: linear-gradient(120deg, #cc1bae, #0eabc7);
+    background-size: cover; /* Pour couvrir toute la section */
+    background-position: center; /* Centre l'image */
+    padding: 60px 0; /* Padding pour la section */
+    color: #fff; /* Couleur du texte, changez si nécessaire */
+}
+
+.srcc {
+    background: rgba(0, 0, 0, 0.5); /* Légère transparence pour le fond du conteneur */
+    padding: 20px; /* Padding pour le conteneur */
+    border-radius: 8px; /* Coins arrondis */
+}
+
+.div1, .div2 {
+    z-index: 1; /* Assure que le texte soit au-dessus de l'image */
+}
+
+.srcc{
+    margin-top: 100px;
+
+}
+h2{
+   text-align: center;
+   color: rgb(219, 16, 152);
+   font-weight: bold;
+   margin-right: 70px;
+}
+
+
+.div1{
+     margin-top: 10px;
+}
+
+
+.div2{
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+
+p{
+    text-align: center;
+
+}
+
+i{
+    font-size: 30px;
+    color: rgb(219, 16, 152);
+    margin-right: 20px;
+}
+
+strong{
+    font-weight: bold;
+    color: blanchedalmond;
+    font-size: 20px;
+}
+
+.animated-form {
+    animation: slideIn 0.5s ease-out; /* Animation au chargement */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px); /* Commence en bas */
+        opacity: 0; /* Début invisible */
+    }
+    to {
+        transform: translateY(0); /* Fin à la position normale */
+        opacity: 1; /* Devenir visible */
+    }
+}
+
+/* Ajoutez un léger effet au survol du bouton */
+.btn:hover {
+    background-color: rgb(189, 12, 137); /* Change la couleur du bouton au survol */
+    transform: scale(1.05); /* Agrandit légèrement le bouton */
+    transition: background-color 0.3s, transform 0.3s; /* Transition douce */
+}
+
+/* Animation pour le mouvement */
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px); /* Déplacement vers la droite */
+    }
+    100% {
+        transform: translateX(0); /* Retour à la position d'origine */
+    }
+}
+
+/* Application de l'animation sur survol */
+.div1 {
+    transition: transform 0.3s ease; /* Transition douce */
+}
+
+.div1:hover {
+    animation: move 0.6s ease; /* Lancer l'animation au survol */
+}
+
+/* Styles de base pour le contact */
+.contact-section {
+    padding: 50px 0; /* Espacement autour de la section */
+}
+
+.srcc {
+    max-width: 1200px; /* Largeur maximale pour le conteneur */
+    margin: auto; /* Centrer le conteneur */
+}
+
+/* Styles spécifiques pour les colonnes */
+.div2 {
+    background-color: rgba(255, 255, 255, 0.9); /* Fond blanc avec une opacité */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 20px; /* Espacement interne */
+}
+
+/* Media Query pour appareils mobiles */
+/* Media Query pour appareils mobiles */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Aligne les colonnes verticalement */
+        align-items: center; /* Centre les colonnes horizontalement */
+    }
+    h2{
+        text-align: center;
+    }
+
+    .div1, .div2 {
+        width:  90%; /* Prend 90% de la largeur de l'écran */
+        margin: 10px 0; /* Ajoute un espacement vertical entre les divs */
+      
+    }
+   
+}
+
+
+

@@ -1,0 +1,76 @@
+.skills {
+    padding: 60px 0;
+    background-color: rgba(248, 249, 250, 0.5); /* Couleur de fond claire avec transparence */
+    border-radius: 15px; /* Rayon de bordure pour arrondir les coins */
+    margin: 0 auto; /* Centrer la section */
+    max-width: 1200px; /* Largeur maximale de la section */
+    margin-top: 50px;
+}
+
+.skills h2 {
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: linear-gradient(120deg, #cc1bae, #0eabc7); /* Couleur du texte */
+    text-align: center; /* Centrer le titre */
+}
+
+.card {
+    border: 1px solid #ddd; /* Bordure grise */
+    border-radius: 8px; /* Coins arrondis */
+    transition: transform 0.2s, box-shadow 0.2s; /* Animation au survol */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre portée */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Agrandissement au survol */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre plus forte au survol */
+}
+
+.progress {
+    height: 20px; /* Hauteur de la barre de progression */
+}
+
+.progress-bar {
+    background: linear-gradient(120deg, #cc1bae, #0eabc7); /* Dégradé pour la barre de progression */
+}
+
+.card-title {
+    font-size: 1.5rem; /* Taille de la police du titre */
+    display: flex; /* Pour aligner l'icône et le texte */
+    align-items: center; /* Centre verticalement l'icône et le texte */
+}
+
+.card-title i {
+    margin-right: 10px; /* Espacement entre l'icône et le texte */
+    font-size: 1.5rem; /* Taille de l'icône */
+    color: #007bff; /* Couleur de l'icône */
+}
+
+/* Styles par défaut pour les compétences */
+.container {
+    padding: 20px; /* Ajustez le padding si nécessaire */
+}
+
+.row {
+    display: flex; /* Utilise flexbox pour les lignes */
+    flex-wrap: wrap; /* Permet aux cartes de passer à la ligne */
+}
+
+/* Media Query pour les écrans de moins de 768px */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Empile les cartes verticalement */
+        align-items: center; /* Centre les cartes horizontalement */
+    }
+
+    .col-md-4 {
+        flex: 1 0 100%; /* Chaque carte prend 100% de la largeur */
+        margin-bottom: 15px; /* Espacement vertical entre les cartes */
+    }
+
+    /* Optionnel : ajuster la carte */
+    .card {
+        width: 100%; /* Assure que chaque carte prend toute la largeur */
+    }
+}
+
